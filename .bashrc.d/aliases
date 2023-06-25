@@ -1,0 +1,5 @@
+alias maj='sudo dnf upgrade && sudo dnf -y autoremove && sudo dnf -y clean all && sudo flatpak update'
+alias rm='rm -I'
+alias cl='clear'
+alias text='gnome-text-editor'
+alias pdf='evince'
