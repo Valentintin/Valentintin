@@ -31,7 +31,6 @@ bleu="\[\e[1;34m\]"
 NC="\[\e[0m\]"
 vert="\[\e[32m\]"
 export PS1="\u@\h:$bleu\w$NC$vert`is_in_git`$NC$ "
-    
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

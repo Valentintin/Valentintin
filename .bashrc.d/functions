@@ -20,3 +20,14 @@ function cd () {
 	export PS1="\u@\h:$bleu\w$NC$vert`is_in_git`$NC$ " #is_in_git s'execute
 }
 #----------------------------------------------
+#----------------------------------------------
+#Modifie la commande git checkout pour appeler le cd
+function git() {
+    if [[ $@ == "checkout"* ]]; then
+        command git "$@" && cd .
+    else
+        command git "$@"
+    fi
+}
+#----------------------------------------------
+
