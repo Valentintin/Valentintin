@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ -f "$HOME/.bashrc" ];then
-rm $HOME/.bashrc;
-echo ".bashrc remove";
+    rm $HOME/.bashrc;
+    echo ".bashrc remove";
 fi
 if [ -d "$HOME/.bashrc.d" ];then
-rm -r $HOME/.bashrc.d;
-echo ".bashrc.d remove";
+    rm -r $HOME/.bashrc.d;
+    echo ".bashrc.d remove";
 fi
 ln -s Documents/Valentintin/.bashrc $HOME/.bashrc
 echo ".bashrc linked"
