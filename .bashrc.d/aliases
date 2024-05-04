@@ -1,5 +1,6 @@
-alias maj='sudo dnf5 upgrade && sudo dnf5 -y autoremove && sudo dnf5 -y clean all && sudo flatpak update'
+alias maj='sudo dnf upgrade && sudo dnf -y autoremove && sudo dnf -y clean all && sudo flatpak update'
 alias rm='rm -I'
 alias cl='clear'
 alias text='gnome-text-editor'
 alias pdf='evince'
+alias grep='grep -C 5'
