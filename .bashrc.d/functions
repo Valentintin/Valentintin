@@ -2,7 +2,7 @@
 #Permet d'afficher la branch git où on se trouve si on est dans un (sous-)dossier git
 function is_in_git () {
 	if [ `git rev-parse --is-inside-work-tree 2>/dev/null` ] ; then
-		echo -n " »" && git branch | grep \* |  sed 's/\* //'; 
+		echo -n " »" && git branch | grep -A 0 -B 0 \* |  sed 's/\* //'; 
 	else 
 		echo '' ;
 	fi
